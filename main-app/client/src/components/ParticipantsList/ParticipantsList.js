@@ -14,6 +14,7 @@ class Participants extends Component {
     loading: false,
     records: participantData,
     participants: [],
+   
   };
 
   componentDidMount() {
@@ -93,6 +94,7 @@ class Participants extends Component {
           handlePrevNextSelection={this.handlePrevNextSelection}
           setCurrentPage={this.setCurrentPage}
         />
+        {this.state.participants.JSON.stringify()}
       </div>
     );
   }
